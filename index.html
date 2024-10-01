@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Website</title>
 
   <!-- Bootstrap CSS -->
@@ -18,72 +18,118 @@
 
   <!-- Custom style -->
   <link rel="stylesheet" href="asstes/style.css" />
+  <link rel="stylesheet" href="asstes/style_xs.css" />
+  <link rel="stylesheet" href="asstes/style_sm.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="container d-flex justify-content-between align-items-center">
+  <nav class="navbar navbar-expand-lg header">
+    <div class="container">
       <div class="logo">
         <img src="images/Logo.png" alt="">
       </div>
-      <nav class="menu">
-        <a href="#">menu</a>
-        <a href="#">menu 1</a>
-        <a href="#">menu 2</a>
-        <a href="#">menu 3</a>
-        <a href="#">menu 4</a>
-        <a href="#">menu 5</a>
-        <a href="#"><img src="images/search.png" alt=""></a>
-      </nav>
+      
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#slider">Block</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dropdown">Block 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#list-box">Block 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#d-form">Block 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#client-form">Block 4</a>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link" href="#login-form">Block 5</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><img src="images/search.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <section class="banner-slider">
+ <section class="banner-slider">
     <div class="slider">
-      <!-- Slide 1 -->
+  
       <div class="banner-slide">
-        <img src="images/banner_1920_550.jpg" alt="Slide 1" class="img-fluid" />
+        <div class="banner-gradient"></div>
+        <img src="images/banner_1920_550.jpg" alt="Slide 1" class="img-fluid banner-image" />
         <div class="banner-content">
           <h1>Lorem ipsum dolor sit amet
             consectetuer adipiscing.</h1>
           <p>Elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
             aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
             exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comm...</p>
-          <a href="#" class="">Learn More</a>
+          <a href="#" class="banner-learn-more"><span>Learn More </span><span> <img src="images/learnmore_banner.png" alt=""></span></a>
         </div>
       </div>
-      <!-- Slide 2 -->
+ 
       <div class="banner-slide">
-        <img src="images/banner_1920_550.jpg" alt="Slide 2" class="img-fluid" />
+        <div class="banner-gradient"></div>
+        <img src="images/banner_1920_550.jpg" alt="Slide 1" class="img-fluid banner-image" />
         <div class="banner-content">
           <h1>Lorem ipsum dolor sit amet
             consectetuer adipiscing.</h1>
           <p>Elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
             aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
             exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comm...</p>
-          <a href="#" class="">Learn More</a>
+          <a href="#" class="banner-learn-more"><span>Learn More </span><span> <img src="images/learnmore_banner.png" alt=""></span></a>
         </div>
       </div>
-      <!-- Slide 3 -->
+
       <div class="banner-slide">
-        <img src="images/banner_1920_550.jpg" alt="Slide 3" class="img-fluid" />
+        <div class="banner-gradient"></div>
+        <img src="images/banner_1920_550.jpg" alt="Slide 1" class="img-fluid banner-image" />
         <div class="banner-content">
           <h1>Lorem ipsum dolor sit amet
             consectetuer adipiscing.</h1>
           <p>Elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
             aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
             exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comm...</p>
-          <a href="#" class="">Learn More</a>
+          <a href="#" class="banner-learn-more"><span>Learn More </span><span> <img src="images/learnmore_banner.png" alt=""></span></a>
         </div>
       </div>
-    </div>
+    
+      <div class="banner-slide">
+        <div class="banner-gradient"></div>
+        <img src="images/banner_1920_550.jpg" alt="Slide 1" class="img-fluid banner-image" />
+        <div class="banner-content">
+          <h1>Lorem ipsum dolor sit amet
+            consectetuer adipiscing.</h1>
+          <p>Elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+            exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comm...</p>
+          <a href="#" class="banner-learn-more"><span>Learn More </span><span> <img src="images/learnmore_banner.png" alt=""></span></a>
+        </div>
+      </div>
+    
   </section>
 
   <section class="two-column-section">
     <div class="container">
       <div class="row align-items-center">
         <!-- Left Column with Image -->
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 watermark">
           <img src="images/logo_watermark.png" alt="Centered Image" class="img-fluid" />
         </div>
 
@@ -97,7 +143,7 @@
             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
             consequat. Duis autem vel eum
           </p>
-          <a href="#" class="leran-more">Learn More <span></span></a>
+          <a href="#" class="leran-more"><span>Learn More</span> <span class="hov"><img src="images/learnmore_banner.png" alt=""></span></a>
         </div>
       </div>
     </div>
@@ -107,17 +153,18 @@
     <div class="container">
       <h2 class="text-center main-title">BLOCK 1</h2>
       <div class="row">
-        <div class="col-md-6 block1-left-col">
-          <div class="row align-items-center">
-
-            <div class="col-md-12 open-book">
-              <img src="images/publication.png" alt="" />
-            </div>
-            <div class="col-md-6">
-              <img src="images/274_355.jpg" alt="Image Left" class="img-fluid left-image" />
+        <div class="col-md-6 col-sm-12 block1-left-col">
+          <div class="open-book">
+            <img src="images/publication.png" alt="" />
+          </div>
+          <div class="block1-left-col-items align-items-center">
+          
+            
+            <div class="block1-left-col-imge">
+              <img src="images/274_355.jpg" alt="Image Left" class="left-image" />
             </div>
             <!-- Right Side of Nested Column (Heading and Paragraph) -->
-            <div class="col-md-6">
+            <div class="block1-left-col-text">
               <h5>LOREM IPSUM</h5>
               <p class="font-size-21">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -129,9 +176,14 @@
               </p>
             </div>
           </div>
+          <div class="learn-more-div">
+            <a href="#"><span>Learn More </span><span><img src="images/view_all_hover.png" alt=""></span></a>
+          </div>
+         
         </div>
+    
 
-        <div class="col-md-6 block1-right-col">
+        <div class="col-md-6 col-sm-12 block1-right-col">
           <div class="row align-items">
             <div class="image-align">
               <img src="images/198_256_1.jpg" alt="First Row Image" class="img-fluid" />
@@ -148,9 +200,13 @@
                 </p>
               </div>
             </div>
+           
+          </div>
+          <div class="learn-more-div">
+            <a href="#"><span>Learn More </span><span><img src="images/view_all_hover.png" alt=""></span></a>
           </div>
 
-          <div class="row align-items">
+          <div class="row align-items margin-top-size">
             <div class="image-align">
               <img src="images/198_256_1.jpg" alt="First Row Image" class="img-fluid" />
             </div>
@@ -166,9 +222,12 @@
               </div>
             </div>
           </div>
+          <div class="learn-more-div">
+            <a href="#"><span>Learn More </span><span><img src="images/view_all_hover.png" alt=""></span></a>
+          </div>
         </div>
       </div>
-      <a href="#">Learn More <span><img src="images/view_all.png" alt=""></span></a>
+     
     </div>
   </section>
 
@@ -189,6 +248,9 @@
 
               </div>
             </div>
+            <div class="learn-more-div">
+              <a href="#"><span>Learn More </span><span><img src="images/view_all_hover.png" alt=""></span></a>
+            </div>
           </div>
 
 
@@ -204,7 +266,11 @@
                   sed diam nonum...
                 </p>
               </div>
+              <div class="learn-more-div">
+                <a href="#"><span>Learn More </span><span><img src="images/view_all_hover.png" alt=""></span></a>
+              </div>
             </div>
+            
             <div class="card">
               <img src="images/232_150_2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -214,20 +280,24 @@
                   aliquipexea comm
                   odo consequat...</p>
               </div>
+              <div class="learn-more-div">
+                <a href="#"><span>Learn More </span><span><img src="images/view_all_hover.png" alt=""></span></a>
+              </div>
             </div>
           </div>
 
         </div>
       </div>
-      <a href="#">Learn More <span><img src="images/view_all.png" alt=""></span></a>
+   
     </div>
   </section>
 
 <section class="block-4-5">
+  
   <div class="container">
 <div class="row">
   <div class="col-md-6 block-4 block-overlay">
-    <h2 class="text-left main-title">BLOCK 4</h2>
+    <h2 class="text-left main-title">BLOCK 3</h2>
     <div class="block4-items">
       <div class="block4-items-cal">
        <div class="cal-month">
@@ -278,7 +348,7 @@
     
   </div>
   <div class="col-md-6 block-5 block-overlay">
-    <h2 class="text-left main-title">BLOCK 5</h2>
+    <h2 class="text-left main-title">BLOCK 4</h2>
     <div class="block5-items">
       <div class="block5-items-img">
       <img src="images/172_112_1.jpg" alt="">
@@ -328,12 +398,12 @@
         <!-- Quick Links -->
         <div class="col-md-2 footer-col">
           <ul class="quick-link">
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">MENU 1</a></li>
-            <li><a href="#">MENU 2</a></li>
-            <li><a href="#">MENU 3</a></li>
-            <li><a href="#">MENU 4</a></li>
-            <li><a href="#">MENU 5</a></li>
+            <li><a href="#">Block</a></li>
+            <li><a href="#">Block 1</a></li>
+            <li><a href="#">Block 2</a></li>
+            <li><a href="#">Block 3</a></li>
+            <li><a href="#">Block 4</a></li>
+            <li><a href="#">Block 5</a></li>
           </ul>
         </div>
 
@@ -346,6 +416,7 @@
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-wifi"></i></a>
           </div>
         </div>
 

@@ -1,0 +1,20 @@
+@media (min-width: 768px) and (max-width: 1024px){
+    *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+    .complex-section .block1-left-col {
+        height: auto;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .complex-section .row{
+        display: grid;
+    }
+}

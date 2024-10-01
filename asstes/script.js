@@ -1,14 +1,4 @@
 
-//   $(document).ready(function(){
-//     $('.slider').slick({
-//       dots: true,
-//       infinite: true,
-//       speed: 500,
-//       slidesToShow: 1,
-//       adaptiveHeight: true
-//     });
-//   });
-
 $('.slider').slick({
     dots: true,
     infinite: true,
@@ -16,6 +6,6 @@ $('.slider').slick({
     slidesToShow: 1,
     // adaptiveHeight: true,
     // arrows: true, 
-    autoplay: true, 
-    autoplaySpeed: 13000
+    // autoplay: true, 
+    // autoplaySpeed: 13000
   });
