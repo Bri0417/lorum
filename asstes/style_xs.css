@@ -1,6 +1,6 @@
 
 @media (max-width: 767px) {
-
+    
     img {
         max-width: 100%;
         height: auto;
@@ -179,6 +179,12 @@
         top: 20px;
         left: 0;
     }
+    li.nav-item:last-child {
+        top: 0;
+        left: 0;}
+     .block2 .block1-view-all {
+            margin-top: 70px;
+        }
  }
 
   
