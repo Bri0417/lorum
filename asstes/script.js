@@ -6,6 +6,6 @@ $('.slider').slick({
     slidesToShow: 1,
     // adaptiveHeight: true,
     // arrows: true, 
-    // autoplay: true, 
-    // autoplaySpeed: 13000
+    autoplay: true, 
+    autoplaySpeed: 13000
   });
