@@ -4,8 +4,8 @@ $('.slider').slick({
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    // adaptiveHeight: true,
+    adaptiveHeight: true,
     // arrows: true, 
     autoplay: true, 
-    autoplaySpeed: 13000
+    autoplaySpeed: 3000
   });
